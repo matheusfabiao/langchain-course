@@ -1,0 +1,38 @@
+[project]
+name = "langchain-course"
+version = "0.1.0"
+description = "Curso de LangChain para Inteligência Artificial Generativa, cobrindo todos os conceitos necessários para criar suas próprias aplicações. O curso conta com 2 versões: uma utilizando a OpenAI e outra com o Ollama, para você escolher a melhor opção financeira para você. Curso originamente criado pelo professor Brandon Hancock, do canal do YouTube aiwithbrandon (https://www.youtube.com/@aiwithbrandon), mas adaptado para a nova versão do LangChain e com uma versão de código utilizando Ollama."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.3.23",
+    "langchain-chroma>=0.2.2",
+    "langchain-community>=0.3.21",
+    "langchain-huggingface>=0.1.2",
+    "langchain-ollama>=0.3.1",
+    "langchain-openai>=0.3.12",
+    "python-dotenv>=1.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "blue>=0.9.1",
+    "isort>=6.0.1",
+    "taskipy>=1.14.1",
+]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.taskipy.tasks]
+# Formata o código com o Blue e o Isort.
+# O comando && é usado para executar dois comandos em sequência.
+# Exemplo: task format
+format = "blue . && isort ."
+
+# Primeiro entre na pasta desejada e execute o comando run + o nome do arquivo desejado.
+# Exemplo: task run 1_chat_models/1_chat_model_basic.py
+# Obs: O comando format é executado automaticamente antes de executar o comando run.
+pre_run = "task format"
+run = "python"
