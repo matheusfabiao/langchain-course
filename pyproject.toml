@@ -34,5 +34,5 @@ format = "blue . && isort ."
 # Primeiro entre na pasta desejada e execute o comando run + o nome do arquivo desejado.
 # Exemplo: task run 1_chat_models/1_chat_model_basic.py
 # Obs: O comando format é executado automaticamente antes de executar o comando run.
-pre_run = "task format"
+pre_run = "cd .. && task format && cd Ollama" # Mude para a pasta desejada.
 run = "python"
