@@ -5,9 +5,12 @@ description = "Curso de LangChain para Inteligência Artificial Generativa, cobr
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "firestore>=0.0.8",
     "langchain>=0.3.23",
     "langchain-chroma>=0.2.2",
     "langchain-community>=0.3.21",
+    "langchain-google-firestore>=0.5.0",
+    "langchain-google-genai>=2.1.2",
     "langchain-huggingface>=0.1.2",
     "langchain-ollama>=0.3.1",
     "langchain-openai>=0.3.12",
