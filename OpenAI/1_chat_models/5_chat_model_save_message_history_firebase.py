@@ -1,4 +1,5 @@
 # Importação dos pacotes Python necessários para o projeto
+from dotenv import load_dotenv
 from google.cloud import firestore
 from langchain_google_firestore import FirestoreChatMessageHistory
 from langchain_openai import ChatOpenAI
