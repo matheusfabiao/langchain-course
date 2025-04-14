@@ -43,15 +43,26 @@ cp .env.example .env
 ## 🗂️ Estrutura do Projeto
 
 ```
-├── OpenAI/                 # Exemplos usando OpenAI
-│   ├── 1_chat_model_basic.py
-│   ├── 2_chat_model_basic_conversation.py
-│   └── 3_chat_model_alternatives.py
-├── Ollama/                 # Exemplos usando Ollama
-│   └── 1_chat_models/
-│       ├── 1_chat_model_basic.py
-│       ├── 2_chat_model_basic_conversation.py
-│       └── 3_chat_model_alternatives.py
+├── Ollama/
+│   ├── 1_chat_models/
+│   │   ├── 1_chat_model_basic.py
+│   │   ├── 2_chat_model_basic_conversation.py
+│   │   ├── 3_chat_model_alternatives.py
+│   │   ├── 4_chat_model_basic_conversation_with_user.py
+│   │   └── 5_chat_model_save_message_history_firebase.py
+│   └── 2_prompt_templates/
+│       ├── 1_prompt_template_basic.py
+│       └── 2_prompt_templates_with_chat_model.py
+├── OpenAI/
+│   ├── 1_chat_models/
+│   │   ├── 1_chat_model_basic.py
+│   │   ├── 2_chat_model_basic_conversation.py
+│   │   ├── 3_chat_model_alternatives.py
+│   │   ├── 4_chat_model_basic_conversation_with_user.py
+│   │   └── 5_chat_model_save_message_history_firebase.py
+│   └── 2_prompt_templates/
+│       ├── 1_prompt_template_basic.py
+│       └── 2_prompt_templates_with_chat_model.py
 └── pyproject.toml         # Configurações do projeto
 ```
 
