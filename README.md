@@ -50,9 +50,15 @@ cp .env.example .env
 │   │   ├── 3_chat_model_alternatives.py
 │   │   ├── 4_chat_model_basic_conversation_with_user.py
 │   │   └── 5_chat_model_save_message_history_firebase.py
-│   └── 2_prompt_templates/
-│       ├── 1_prompt_template_basic.py
-│       └── 2_prompt_templates_with_chat_model.py
+│   ├── 2_prompt_templates/
+│   │   ├── 1_prompt_template_basic.py
+│   │   └── 2_prompt_templates_with_chat_model.py
+│   └── 3_chains/
+│       ├── 1_chains_basics.py
+│       ├── 2_chains_under_the_hood.py
+│       ├── 3_chains_extended.py
+│       ├── 4_chains_parallel.py
+│       └── 5_chains_branching.py
 ├── OpenAI/
 │   ├── 1_chat_models/
 │   │   ├── 1_chat_model_basic.py
@@ -60,9 +66,15 @@ cp .env.example .env
 │   │   ├── 3_chat_model_alternatives.py
 │   │   ├── 4_chat_model_basic_conversation_with_user.py
 │   │   └── 5_chat_model_save_message_history_firebase.py
-│   └── 2_prompt_templates/
-│       ├── 1_prompt_template_basic.py
-│       └── 2_prompt_templates_with_chat_model.py
+│   ├── 2_prompt_templates/
+│   │   ├── 1_prompt_template_basic.py
+│   │   └── 2_prompt_templates_with_chat_model.py
+│   └── 3_chains/
+│       ├── 1_chains_basics.py
+│       ├── 2_chains_under_the_hood.py
+│       ├── 3_chains_extended.py
+│       ├── 4_chains_parallel.py
+│       └── 5_chains_branching.py
 └── pyproject.toml         # Configurações do projeto
 ```
 
