@@ -176,4 +176,7 @@ pyrightconfig.json
 # Extra training files
 extras/
 
+# ChromaDB vector databases
+chroma_*/
+
 # End of https://www.toptal.com/developers/gitignore/api/python
