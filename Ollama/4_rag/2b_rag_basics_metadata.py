@@ -14,8 +14,7 @@ embeddings = OllamaEmbeddings(model='nomic-embed-text')
 
 # Carrega o vector store do Chroma
 db = Chroma(
-    persist_directory=persistent_directory,
-    embedding_function=embeddings
+    persist_directory=persistent_directory, embedding_function=embeddings
 )
 
 # Define a pergunta que será feita
@@ -32,4 +31,4 @@ relevant_docs = retriever.invoke(query)
 print(f'\n--- Relevant Documents ---')
 for i, doc in enumerate(relevant_docs, 1):
     print(f'Document {i}:\n{doc.page_content}\n')
-    print(f'Source: {doc.metadata['source']}\n')
+    print(f'Source: {doc.metadata["source"]}\n')
